@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <title>Frontend Mentor - Calculator</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <script type="text/javascript" src="script.js" defer></script>
+    </head>
+    
+    <body>
+        <header>
+            <img class="logo" src="images/logo.svg" alt="splitter logo">
+        </header>
+
+        <main>
+            <form class="inputContainer">
+                <div class="billInput">
+                    <label for="bill">Bill</label>
+                    <input type="text" id="bill" name="bill" placeholder="0">
+                </div>
+
+                <div class="tip">
+                    <p>Select Tip %</p>
+                    <ul>
+                        <li><button id="fivepbtn" data-tip="0.05">5%</button></li>
+                        <li><button id="tenpbtn" data-tip="0.1">10%</button></li>
+                        <li><button id="fiftpbtn" data-tip="0.15">15%</button></li>
+                        <li><button id="twentyfivepbtn" data-tip="0.25">25%</button></li>
+                        <li><button id="fiftypbtn" data-tip="0.5">50%</button></li>
+                        <li><input placeholder="Custom" class="custom"></input></li>
+                    </ul>
+                </div>
+
+                <div class="peopleInput">
+                    <label for="ppl" class="pplLabel">
+                        <p>Number of People</p>
+                        <p id="invalidPpl" class="invalidPpl">Can't be zero</p>
+                    </label>
+                    <input type="text" id="ppl" name="ppl" placeholder="0">
+                </div>
+            </form>
+
+            <aside class="calcContainer">
+                <div class="tipAmount">
+                    <div class="tipAmountLabel">
+                        <p>Tip Amount</p>
+                        <p class="description">/ person</p>
+                    </div>
+                    <p class="tipCalc">$0.00</p>
+                </div>
+
+                <div class="total">
+                    <div class="totalLabel">
+                        <p>Total</p>
+                        <p class="description">/ person</p>
+                    </div>
+                    <p class="totalCalc">$0.00</p>
+                </div>
+
+                <button type="reset" 
+                class="resetButton">RESET</button>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="attribution">
+                <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://www.frontendmentor.io/profile/wcyin9" target="_blank">Chenyin Wu</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>
