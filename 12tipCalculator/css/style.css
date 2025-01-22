@@ -263,8 +263,6 @@ li ::placeholder {
 @media screen and (min-width: 900px) {
     body {
         position: relative;
-        display: grid;
-        place-content: center;
     }
     .logo {
         margin: 0 auto;
@@ -280,6 +278,7 @@ li ::placeholder {
         gap: 48px;
         max-width: 920px;
         box-shadow: 0 32px 43px rgba(79,166, 175, 0.2);
+        place-content: center;
     }
 
     .inputContainer {
