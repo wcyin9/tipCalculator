@@ -266,6 +266,10 @@ li ::placeholder {
         display: grid;
         place-content: center;
     }
+    .logo {
+        margin: 0 auto;
+        padding: 0 0 2.5rem;
+    }
     main {
         padding: 2rem 2rem;
         border-radius: 25px;
