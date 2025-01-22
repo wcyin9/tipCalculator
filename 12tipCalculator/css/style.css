@@ -261,7 +261,11 @@ li ::placeholder {
 /* -----desktop ----- */
 
 @media screen and (min-width: 900px) {
-    body {position: relative;}
+    body {
+        position: relative;
+        display: grid;
+        place-content: center;
+    }
     main {
         padding: 2rem 3rem;
         border-radius: 25px;
@@ -323,7 +327,8 @@ li ::placeholder {
         /* padding-bottom: 0;
         padding-top: 3rem; */
         position: absolute;
-        bottom: 1%;
+        padding: 0;
+        bottom: 0;
         left: 50%;
         transform: translate(-50%, -50%);
     }
